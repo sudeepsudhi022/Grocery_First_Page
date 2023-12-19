@@ -1,0 +1,366 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.head1{
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(./Image/bg2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background-color: rgb(187, 245, 187); */
+}
+.logo{
+    width: 40%;
+    padding: 10px 0px 10px 30px;
+    float: left;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo h1{
+    color: white;
+}
+.navbar-brand h1{
+    color: #ffff;
+}
+.navbar-nav li a{
+    color: #ffff;
+    
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 40px;
+}
+.navbar-nav li a.nav-link.active{
+    color: white;
+    border-bottom: 2px solid white;
+
+}
+.navbar-nav li a:hover{
+    border-bottom: 2px solid white;
+    color: red;
+    font-weight: 900;
+}
+nav span{
+    color: white;
+}
+/* .nav-bar{
+    width: 60%;
+    height: 100%;
+    float: left;
+    padding: 25px;
+    box-sizing: border-box;
+    
+}
+.nav-bar ul li{
+    display: inline-block;
+    margin-right: 50px;
+    padding: 10px 0px 10px 30px;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.nav-bar ul li  :hover{
+    border-bottom: 2px solid white;
+    color: red;
+    font-weight: 900;
+}
+.nav-bar ul li a.active{
+    font-weight: 900;
+    border-bottom: 2px solid white;
+}
+.nav-bar button{
+    width: 80px;
+    height: 40px;
+} */
+
+.title , .title1{
+    width: 50%;
+    height: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title h1{
+    font-size: 80px;
+    font-family: monospace;
+    font-weight: 900;
+    color: white;
+    word-spacing: 2px;
+    
+}
+.title p{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+
+}
+.title button{
+    background-color: yellowgreen;
+    color: white;
+    /* color: white; */
+}
+.title button:hover{
+    background-color: red;
+    color: white;
+}
+.title1 img{
+    width: 90%;
+    transition: all 2s linear;
+
+}
+.title1 div.imghide{
+    display: none;
+    width: 90%;
+}
+.title1 img:hover{
+    transform: scale(1.1);
+}
+.topsale{
+    margin: 20px 0px;
+}
+.title-box{
+    background: greenyellow;
+    color: #ffff;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;  
+    display: flex;  
+}
+.title-box h2{
+    font-size: 22px;
+}
+.title-box::after{
+    content: '';
+    border-top:  40px solid greenyellow;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+/* product */
+.product-top img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.product-top{
+    position: relative;
+    cursor: pointer;
+}
+.overlay-right {
+    display: none;
+    opacity: 1;
+    transition: 1s;
+    margin-left: 0;
+    width: 70px;
+    position: absolute;
+    bottom: 20%;
+    left: -5%;
+}
+
+.overlay-right .bi{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: black;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-top:hover .overlay-right
+{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 2s;
+    display: block;
+}
+
+.prodcut-botom .bi{
+    color: greenyellow;
+    font-size: 10px;
+}
+.prodcut-botom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.prodcut-botom h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.aboutus{
+    text-align: center;
+}
+.aboutus h1{
+    font-size: 40px;
+    text-align: start;
+}
+.aboutus p{
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: justify;
+}
+.aboutus button{
+    width: 20%;
+    height: 50px;
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: #ffff;
+    /* cursor: pointer; */
+}
+
+.footer h1{
+    font-size: 15px;
+    margin: 25px 0;
+}
+.footer p{
+    font-size: 12px;
+}
+.copywrite{
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.bi-heart
+{
+    color: red;
+    font-size: 15px;
+}
+.footer hr{
+    margin-top: 10px;
+    background-color: #cccc;
+}
+.footer-image img{
+    width: 150px;
+}
+.footer .row .bi{
+    padding-right: 20px;
+    font-size: 15px;
+}
+/* navbar icon */
+#menu-btn,#close-btn{
+    font-size: 20px;
+    color: white;
+    float: right;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+}
+/* @media */
+
+@media only screen and (max-width: 980px){
+    .head1{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .logo{
+        width: 50%;
+        padding: 20px 0px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    
+    .title {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .title h1{
+        font-size: 60px;
+        font-family: monospace;
+        font-weight: 900;
+        color: white;
+        word-spacing: 2px;
+        
+    }
+    .title p{
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+    
+    }
+    .title button{
+        background-color: rgb(47, 203, 255);
+        color: #ffff;
+        /* color: white; */
+    }
+    .title button:hover{
+        background-color: red;
+        color: white;
+    }
+    .title1 img{
+        display: none;
+    
+    }
+}
+@media only screen and (max-width: 980px){
+    .title {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .title h1{
+        font-size: 40px;
+        font-family: monospace;
+        font-weight: 900;
+        color: white;
+        word-spacing: 2px;
+        
+    }
+    .title p{
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+    
+    }
+    .title button{
+        background-color: greenyellow;
+        /* color: white; */
+    }
+    .title button:hover{
+        background-color: red;
+        color: white;
+    }
+    .title1 img{
+        display: none;
+    
+    }
+    
+}
